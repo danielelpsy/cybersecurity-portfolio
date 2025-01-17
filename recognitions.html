@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Riconoscimenti - Daniele Armentano</title>
+
+    <!-- Meta SEO -->
+    <meta name="description" content="Riconoscimenti ottenuti da Daniele Armentano presso Oracle, PlayStation, Grindr e altre aziende." />
+    <meta name="keywords" content="cybersecurity, penetration testing, bug bounty, ethical hacking, riconoscimenti, Daniele Armentano" />
+    <meta name="author" content="Daniele Armentano" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Foglio di stile e script -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar" aria-label="Menu laterale">
+      <div class="sidebar-header">
+        <h2 data-i18n="menuTitle">Menù</h2>
+      </div>
+      <ul>
+        <li><a href="index.html" data-i18n="menuHome">Home</a></li>
+        <li><a href="curriculum.html" data-i18n="menuCurriculum">Curriculum</a></li>
+        <li><a href="certifications.html" data-i18n="menuCertifications">Certificazioni</a></li>
+        <li><a href="recognitions.html" class="active" data-i18n="menuRecognitions">Riconoscimenti</a></li>
+        <li><a href="study.html" data-i18n="menuStudy">Percorso di Studio</a></li>
+      </ul>
+
+      <!-- Feed RSS -->
+      <div id="security-feed" class="security-feed">
+        <h3 data-i18n="newsTitle">Ultime Notizie CyberSec</h3>
+        <ul id="feed-list"></ul>
+        <p id="feed-error" class="feed-error"></p>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="main-header offset-content">
+      <h1>~/Riconoscimenti</h1>
+      <!-- Selettore lingua -->
+      <div class="lang-switcher">
+        <a href="#" data-lang="it">ITA</a> | 
+        <a href="#" data-lang="en">ENG</a>
+      </div>
+    </header>
+
+    <!-- Contenuto principale -->
+    <main class="main-content offset-content" id="main-content">
+      <h2 data-i18n="recTitle">Riconoscimenti</h2>
+      <p data-i18n="recText">
+        Durante la mia carriera nel campo della cybersecurity, ho collaborato con aziende leader e piattaforme globali, contribuendo al rafforzamento della loro sicurezza attraverso la scoperta e la segnalazione di vulnerabilità critiche.
+      </p>
+
+      <!-- Timeline -->
+      <div class="timeline">
+        <!-- Oracle -->
+        <div class="timeline-item">
+          <div class="timeline-date">Luglio 2023</div>
+          <div class="timeline-content">
+            <h3>Oracle</h3>
+            <p data-i18n="oracleDesc">
+              Inserito nella Oracle Critical Patch Update Advisory di luglio 2023 per il programma On-Line Presence Security Contributors.
+            </p>
+            <a href="https://www.oracle.com/security-alerts/cpujul2023.html" target="_blank" rel="noopener noreferrer" class="timeline-link" data-i18n="viewRecognition">Visualizza il riconoscimento</a>
+          </div>
+        </div>
+
+        <!-- PlayStation -->
+        <div class="timeline-item">
+          <div class="timeline-date">2023</div>
+          <div class="timeline-content">
+            <h3>PlayStation</h3>
+            <p data-i18n="playstationDesc">
+              Inserito nella classifica dei principali ricercatori di sicurezza su HackerOne per il 2023, al 20° posto globale.
+            </p>
+            <a href="https://hackerone.com/playstation/thanks/2023" target="_blank" rel="noopener noreferrer" class="timeline-link" data-i18n="viewRecognition">Visualizza il riconoscimento</a>
+          </div>
+        </div>
+
+        <!-- Grindr -->
+        <div class="timeline-item">
+          <div class="timeline-date">2023</div>
+          <div class="timeline-content">
+            <h3>Grindr</h3>
+            <p data-i18n="grindrDesc">
+              Classificato al 12° posto nella lista dei principali ricercatori di sicurezza su HackerOne per il 2023.
+            </p>
+            <a href="https://hackerone.com/grindr/thanks/2023" target="_blank" rel="noopener noreferrer" class="timeline-link" data-i18n="viewRecognition">Visualizza il riconoscimento</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <p>&copy; 2025 Daniele Armentano | <a href="index.html" data-i18n="menuHome">Home</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title data-i18n="studyPageTitle">Percorso di Studio - Daniele Armentano</title>
+
+    <!-- Meta SEO -->
+    <meta name="description" content="~/Percorso di Studio: Diploma tecnico in Sistemi Informativi Aziendali (SIA) e competenze in programmazione, cybersecurity, amministrazione e gestione progetti." />
+    <meta name="keywords" content="Diploma, Sistemi Informativi Aziendali, cybersecurity, programmazione, Daniele Armentano" />
+    <meta name="author" content="Daniele Armentano" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Foglio di stile e script -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar" aria-label="Menu laterale">
+      <div class="sidebar-header">
+        <h2 data-i18n="menuTitle">Menù</h2>
+      </div>
+      <ul>
+        <li><a href="index.html" data-i18n="menuHome">Home</a></li>
+        <li><a href="curriculum.html" data-i18n="menuCurriculum">Curriculum</a></li>
+        <li><a href="certifications.html" data-i18n="menuCertifications">Certificazioni</a></li>
+        <li><a href="recognitions.html" data-i18n="menuRecognitions">Riconoscimenti</a></li>
+        <li><a href="study.html" class="active" data-i18n="menuStudy">Percorso di Studio</a></li>
+      </ul>
+
+      <!-- Feed RSS -->
+      <div id="security-feed" class="security-feed">
+        <h3 data-i18n="newsTitle">Ultime Notizie CyberSec</h3>
+        <ul id="feed-list"></ul>
+        <p id="feed-error" class="feed-error"></p>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="main-header offset-content">
+      <h1 data-i18n="studyHeader">~/Percorso di Studio</h1>
+      <!-- Selettore lingua -->
+      <div class="lang-switcher">
+        <a href="#" data-lang="it">ITA</a> | 
+        <a href="#" data-lang="en">ENG</a>
+      </div>
+    </header>
+
+    <!-- Contenuto principale – Layout studiato -->
+    <main class="main-content offset-content" id="main-content">
+      <section class="study-info">
+        <!-- Blocco Italiano -->
+        <div class="lang-it">
+          <h2>Diploma tecnico in Sistemi Informativi Aziendali (SIA)</h2>
+          <p class="institution">
+            <strong>IIS IPSIA-ITI "E. Aletti" - ITS "G. Filangieri" - Trebisacce, Calabria</strong>
+          </p>
+          <p class="date"><em>Settembre 2020 – Oggi</em></p>
+          <ul class="study-list">
+            <li><strong>Programmazione:</strong> Java, SQL, HTML, CSS.</li>
+            <li><strong>Sistemi Informativi Aziendali:</strong> Analisi e gestione di database, utilizzo di software aziendali.</li>
+            <li><strong>Cybersecurity:</strong> Identificazione e valutazione delle vulnerabilità, implementazione di misure di sicurezza.</li>
+            <li><strong>Amministrazione Aziendale:</strong> Contabilità, gestione aziendale, analisi finanziaria.</li>
+            <li><strong>Strumenti Digitali:</strong> Pacchetto Microsoft Office, strumenti di collaborazione online (Google Workspace).</li>
+            <li><strong>Gestione Progetti:</strong> Pianificazione, coordinamento dei team e organizzazione delle attività.</li>
+            <li><strong>Lingue:</strong> Inglese (livello B2).</li>
+            <li><strong>Competenze Trasversali:</strong> Problem-solving, lavoro di squadra, capacità comunicative.</li>
+          </ul>
+        </div>
+
+        <!-- Blocco Inglese -->
+        <div class="lang-en" style="display: none;">
+          <h2>Technical Diploma in Business Information Systems (SIA)</h2>
+          <p class="institution">
+            <strong>IIS IPSIA-ITI "E. Aletti" - ITS "G. Filangieri" - Trebisacce, Calabria</strong>
+          </p>
+          <p class="date"><em>September 2020 – Present</em></p>
+          <ul class="study-list">
+            <li><strong>Programming:</strong> Java, SQL, HTML, CSS.</li>
+            <li><strong>Business Information Systems:</strong> Database analysis and management, use of business software.</li>
+            <li><strong>Cybersecurity:</strong> Vulnerability identification and assessment, implementation of security measures.</li>
+            <li><strong>Business Administration:</strong> Accounting, business management, financial analysis.</li>
+            <li><strong>Digital Tools:</strong> Microsoft Office suite, online collaboration tools (Google Workspace).</li>
+            <li><strong>Project Management:</strong> Planning, team coordination and task organization.</li>
+            <li><strong>Languages:</strong> English (B2 level).</li>
+            <li><strong>Transferable Skills:</strong> Problem-solving, teamwork, communication skills.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <p>&copy; 2025 Daniele Armentano | <a href="index.html" data-i18n="menuHome">Home</a></p>
+    </footer>
+  </body>
+</html>

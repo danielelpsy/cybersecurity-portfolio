@@ -1,0 +1,299 @@
+/* RESET DI BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML, BODY */
+html, body {
+  background: #000;
+  color: #00ff00;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* SCROLLBAR (Chrome, Edge, Safari e Firefox) */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000;
+}
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #00ff00;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #00ff00 #000;
+}
+
+/* LINK */
+a, a:visited {
+  color: #00ff00;
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+a:hover {
+  color: #00cc00;
+  text-shadow: 0 0 8px #00ff00;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 14rem;
+  height: 100vh;
+  background: #000;
+  border-right: 2px solid #00ff00;
+  box-shadow: 0 0 15px #00ff00;
+  padding: 1rem;
+  z-index: 1000;
+  overflow-y: auto;
+}
+.sidebar-header {
+  margin-bottom: 1rem;
+}
+.sidebar-header h2 {
+  font-size: 1.2rem;
+}
+.sidebar ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+.sidebar ul li {
+  margin: 1rem 0;
+}
+.sidebar ul li a {
+  display: block;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+.sidebar ul li a.active {
+  background: rgba(0,255,0,0.1);
+  border-left: 2px solid #00ff00;
+  padding-left: 0.8rem;
+}
+
+/* SELEZIONATORE LINGUA (in alto a destra) */
+.lang-switcher {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 1rem;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+  z-index: 1100;
+  font-size: 0.9rem;
+}
+
+/* HEADER */
+.main-header {
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 2px solid #00ff00;
+  box-shadow: 0 0 15px #00ff00;
+  margin-left: 14rem;
+  position: relative;
+}
+.main-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* CONTENUTO PRINCIPALE */
+.main-content {
+  margin-left: 14rem;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  border-left: 2px solid #00ff00;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+.timeline-date {
+  font-size: 0.9rem;
+  color: #00cc00;
+  margin-bottom: 0.3rem;
+}
+.timeline-content {
+  background: #000;
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,255,0,0.3);
+}
+.timeline-content h3 {
+  margin-bottom: 0.5rem;
+  color: #00cc00;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 14px;
+  width: 10px;
+  height: 10px;
+  background-color: #00ff00;
+  border: 2px solid #000;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #00ff00;
+}
+.timeline-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border: 2px solid #00ff00;
+  border-radius: 4px;
+  color: #00ff00;
+  transition: background 0.3s, color 0.3s;
+}
+.timeline-link:hover {
+  background: rgba(0,255,0,0.2);
+  color: #00cc00;
+}
+
+/* PULSANTI DI DOWNLOAD */
+.btn-download, .btn-download-large {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  background: #00ff00;
+  border: 2px solid #00ff00;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+.btn-download i, .btn-download-large i {
+  font-size: 1.5rem;
+}
+.btn-download:hover, .btn-download-large:hover {
+  background: #00cc00;
+  box-shadow: 0 0 25px rgba(0, 255, 0, 0.8);
+  color: #000;
+}
+
+/* CARD / GRIGLIE */
+.cards-grid,
+.cert-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.card,
+.cert-card {
+  display: block;
+  padding: 1.5rem;
+  background: #000;
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover,
+.cert-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0,255,0,0.5);
+}
+.cert-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #00cc00;
+}
+.cert-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+.cert-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  border: 2px solid #00ff00;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  color: #00ff00;
+  transition: background 0.3s, color 0.3s;
+}
+.cert-card a:hover {
+  background: rgba(0,255,0,0.2);
+  color: #00cc00;
+}
+
+/* FOOTER */
+.main-footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #00ff00;
+  margin-top: 2rem;
+}
+
+/* STILE PERSONALIZZATO PER STUDY.HTML */
+.study-info {
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #00ff00, #00cc00) 1;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px rgba(0,255,0,0.5);
+  transition: transform 0.3s;
+}
+.study-info:hover {
+  transform: scale(1.02);
+}
+.study-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.study-info .institution {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.study-info .date {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #00cc00;
+}
+.study-info .study-list {
+  list-style: disc;
+  margin-left: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.study-info .study-list li {
+  margin-bottom: 0.8rem;
+  transition: color 0.3s;
+}
+.study-info .study-list li:hover {
+  color: #00cc00;
+}

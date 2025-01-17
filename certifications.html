@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Certificazioni - Daniele Armentano</title>
+
+    <!-- Meta SEO -->
+    <meta name="description" content="Certificazioni di Daniele Armentano: CompTIA PenTest+, CEH, Security+, Network+ e altre." />
+    <meta name="keywords" content="cybersecurity, penetration testing, bug bounty, ethical hacking, certificazioni, Daniele Armentano" />
+    <meta name="author" content="Daniele Armentano" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Foglio di stile e script -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar" aria-label="Menu laterale">
+      <div class="sidebar-header">
+        <h2 data-i18n="menuTitle">Menù</h2>
+      </div>
+      <ul>
+        <li><a href="index.html" data-i18n="menuHome">Home</a></li>
+        <li><a href="curriculum.html" data-i18n="menuCurriculum">Curriculum</a></li>
+        <li><a href="certifications.html" class="active" data-i18n="menuCertifications">Certificazioni</a></li>
+        <li><a href="recognitions.html" data-i18n="menuRecognitions">Riconoscimenti</a></li>
+        <li><a href="study.html" data-i18n="menuStudy">Percorso di Studio</a></li>
+      </ul>
+
+      <!-- Feed RSS -->
+      <div id="security-feed" class="security-feed">
+        <h3 data-i18n="newsTitle">Ultime Notizie CyberSec</h3>
+        <ul id="feed-list"></ul>
+        <p id="feed-error" class="feed-error"></p>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="main-header offset-content">
+      <h1>~/Certificazioni</h1>
+      <div class="lang-switcher">
+        <a href="#" data-lang="it">ITA</a> | 
+        <a href="#" data-lang="en">ENG</a>
+      </div>
+    </header>
+
+    <!-- Contenuto principale -->
+    <main class="main-content offset-content" id="main-content">
+      <h2 data-i18n="certDetailTitle">Certification Details</h2>
+      <p data-i18n="certDetailText">
+        In this section you will find my main certifications in cybersecurity along with links for further details or verification.
+      </p>
+
+      <!-- Griglia di certificazioni -->
+      <section class="cert-grid">
+        <!-- Card 1 -->
+        <article class="cert-card">
+          <h3>CompTIA PenTest+</h3>
+          <p data-i18n="certificate_PenTest_desc">
+            Certificazione avanzata per professionisti nel penetration testing, con un focus specifico su test di sicurezza e gestione delle vulnerabilità.
+          </p>
+          <a href="https://www.credly.com/badges/d06a9217-3075-47e7-b49d-f5512146db13" target="_blank" rel="noopener noreferrer">Dettagli</a>
+        </article>
+        <!-- Card 2 -->
+        <article class="cert-card">
+          <h3>Certified Ethical Hacker (CEH)</h3>
+          <p data-i18n="certificate_CEH_desc">
+            Certificazione leader per test di penetrazione e sicurezza etica, che attesta solide competenze nell’individuazione di vulnerabilità e tecniche di attacco.
+          </p>
+          <a href="https://aspen.eccouncil.org/VerifyBadge?type=certification&a=p5/j++Tx/3LEfU3hfG7BuIo7Njw/cAXbUglcB8Vpif0=" target="_blank" rel="noopener noreferrer">Dettagli</a>
+        </article>
+        <!-- Card 3 -->
+        <article class="cert-card">
+          <h3>CompTIA Security+</h3>
+          <p data-i18n="certificate_Security_desc">
+            Dimostra competenze essenziali nella sicurezza di rete, nella gestione delle minacce e delle vulnerabilità, nonché nella conformità e nelle operazioni di sicurezza.
+          </p>
+          <a href="https://www.credly.com/badges/76e4a378-b51d-49e1-8507-487419fafdc4" target="_blank" rel="noopener noreferrer">Dettagli</a>
+        </article>
+        <!-- Card 4 -->
+        <article class="cert-card">
+          <h3>CompTIA Network+</h3>
+          <p data-i18n="certificate_Network_desc">
+            Attesta competenze di amministrazione, configurazione e protezione di reti cablate e wireless, fondamentali per ogni professionista IT.
+          </p>
+          <a href="https://www.credly.com/badges/8df11352-9c80-43ba-a50a-f3e54bf1bc4f" target="_blank" rel="noopener noreferrer">Dettagli</a>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <p>&copy; 2025 Daniele Armentano | <a href="index.html" data-i18n="menuHome">Home</a></p>
+    </footer>
+  </body>
+</html>
